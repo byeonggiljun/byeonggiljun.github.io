@@ -27,5 +27,5 @@ jobs:
         uses: AndreasAugustin/actions-template-sync@v2
         with:
           source_repo_path: git@github.com:alshedivat/al-folio.git
-          # upstream_branch: <target_branch> # defaults to main
+          upstream_branch: master # defaults to main
           # pr_labels: <label1>,<label2>[,...] # defaults to template_sync
