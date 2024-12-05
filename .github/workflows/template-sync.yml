@@ -30,6 +30,6 @@ jobs:
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v2
         with:
-          github_token: ${{ secrets.REPO_SYNC_PAT }}
+          # github_token: ${{ secrets.REPO_SYNC_PAT }}
           source_repo_path: ${{ env.SOURCE_REPOSITORY }}
           upstream_branch: ${{ env.SOURCE_BRANCH }}
