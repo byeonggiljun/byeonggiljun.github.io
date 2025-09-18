@@ -29,7 +29,7 @@ latest_posts:
 
 Byeonggil Jun is a Ph.D. student in Computer Engineering (CEN) in the School of Computing and Augmented Intelligence (SCAI) at Arizona State University. 
 His research area includes real-time systems, distributed cyber-physical systems, and computer architecture.
-Recently, his work on addressing inefficiencies in distributed discrete system (DDS) simulation and implementation has been accepted in the conference [SIGSIM-PADS'25](https://sigsim.acm.org/conf/pads/2025/) and will be published in June, 2025.
+Recently, his work on addressing inefficiencies in distributed discrete system (DDS) simulation and implementation has been accepted and published in the conference [SIGSIM-PADS'25](https://sigsim.acm.org/conf/pads/2025/).
 
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder. -->

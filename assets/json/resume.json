@@ -53,18 +53,39 @@
   ],
   "publications": [
     {
-      "name": "Improving the Efficiency of Coordinating Timed Events in Distributed Systems",
-      "publisher": "ACM New York, NY",
+      "name": "Towards Efficient Privacy-Preserving Federated Learning on Edge with Reconfigurable FPGA",
+      "publisher": "2025 Forum on specification & Design Languages (FDL)",
       "releaseDate": "2025",
       "url": "",
       "summary": ""
     },
     {
+      "name": "Zero-Delay Cycles in Distributed Discrete-Event Systems using Lingua Franca",
+      "publisher": "ACM Transactions on Modeling and Computer Simulation",
+      "releaseDate": "2025",
+      "url": "https://dl.acm.org/doi/10.1145/3767727",
+      "summary": ""
+    },
+    {
+      "name": "Improving the Efficiency of Coordinating Timed Events in Distributed Systems",
+      "publisher": "ACM SIGSIM-PADS '25",
+      "releaseDate": "2025",
+      "url": "https://dl.acm.org/doi/full/10.1145/3726301.3728399",
+      "summary": ""
+    },
+    {
       "name": "Efficient Coordination for Distributed Discrete-Event Systems",
-      "publisher": "",
-      "releaseDate": "2024-11-06",
+      "publisher": "2024 22nd ACM-IEEE International Symposium on Formal Methods and Models for System Design (MEMOCODE)",
+      "releaseDate": "2024",
       "url": "https://ieeexplore.ieee.org/abstract/document/10740771",
-      "summary": "."
+      "summary": ""
+    },
+    {
+      "name": "Reliable Event Detection Using Time-Synchronized IoT Platforms",
+      "publisher": "Time-Centric Reactive Software (TCRS): Workshop at Cyber-Physical Systems and Internet of Things (CPS-IoT) Week 2023",
+      "releaseDate": "2023",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3576914.3587501",
+      "summary": ""
     }
   ],
   "skills": [
