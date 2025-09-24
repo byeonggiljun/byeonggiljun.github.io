@@ -40,8 +40,10 @@ table.table a {
   color: var(--global-theme-color);
 
   &:hover {
-    color: var(--global-theme-color);
-    text-decoration: underline;
+    // color: var(--global-theme-color);
+    // text-decoration: underline;
+    color: var(--global-hover-color);
+    text-decoration: none;  // remove underline
   }
 
   &:hover:after :not(.nav-item.dropdown) {
@@ -777,8 +779,12 @@ footer.sticky-bottom {
         }
 
         > em {
-          border-bottom: 1px solid;
+          // border-bottom: 1px solid;
+          // font-style: normal;
+          border-bottom: none;  // remove underline
           font-style: normal;
+          font-weight: bold;    // add bold
+          color: var(--global-theme-color);  // use theme color (blue)
         }
 
         > span.more-authors {
