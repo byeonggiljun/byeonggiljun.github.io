@@ -29,3 +29,7 @@ jobs:
           source_repo_path: alshedivat/al-folio
           upstream_branch: main # defaults to main
           pr_labels: template_sync # defaults to template_sync
+          # Use a PAT with repo + workflow scope so template sync can update
+          # files under .github/workflows when upstream changes include them.
+          source_gh_token: ${{ secrets.TEMPLATE_SYNC_PAT }}
+          target_gh_token: ${{ secrets.TEMPLATE_SYNC_PAT }}
