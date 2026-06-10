@@ -93,14 +93,7 @@
       "name": "Programming",
       "level": "Intermediate",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "C",
-        "C++",
-        "Verilog",
-        "Python",
-        "Java",
-        "Typescript"
-      ]
+      "keywords": ["C", "C++", "Verilog", "Python", "Java", "Typescript"]
     }
   ],
   "languages": [
@@ -119,12 +112,7 @@
     {
       "name": "Computer Engineering",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Cyber-Physical Systems",
-        "Distributed Systems",
-        "Real-Time Systems",
-        "Computer Architecture"
-      ]
+      "keywords": ["Cyber-Physical Systems", "Distributed Systems", "Real-Time Systems", "Computer Architecture"]
     }
   ],
   "references": [
