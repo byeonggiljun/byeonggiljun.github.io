@@ -260,6 +260,7 @@ exclude:
   - _projects/9_project.md
   - _books/
   - backup/
+  - upstream/
 keep_files:
   - CNAME
   - .nojekyll
