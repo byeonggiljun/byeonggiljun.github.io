@@ -9,7 +9,7 @@ profile:
   image: headshot.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>2nd year Ph.D. student</p>
+    <p>3rd year Ph.D. student</p>
     <p>ASU KIM Lab</p><br>
     <p>Tempe, AZ 85281</p>
 
