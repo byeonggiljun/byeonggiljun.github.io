@@ -50,9 +50,22 @@ cv:
         summary: "Achieve high academic achievement.'"
 
     Publications:
+      - title: "Embodied AI Launcher: A Tool for Modeling,Simulation, and Deployment Evaluation of Transformer-Based Embodied AI Tasks at the Edge"
+        publisher: 2026 Forum on specification & Design Languages (FDL)
+        releaseDate: 2026
+        url: ""
+        summary: ""
+
+      - title: "PREFACE: Proactive Re-executions for Fault-aware Mixed-criticality Environments"
+        publisher: 2026 Design, Automation & Test in Europe Conference (DATE)
+        releaseDate: 2026
+        url: https://ieeexplore.ieee.org/abstract/document/11539296
+        summary: ""
+
       - title: Towards Efficient Privacy-Preserving Federated Learning on Edge with Reconfigurable FPGA
         publisher: 2025 Forum on specification & Design Languages (FDL)
         releaseDate: 2025
+        url: https://ieeexplore.ieee.org/abstract/document/11165267
         summary: ""
 
       - title: Zero-Delay Cycles in Distributed Discrete-Event Systems using Lingua Franca
