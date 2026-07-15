@@ -1,8 +1,9 @@
-# Byeonggil Jun's Personal Website. 
+# Byeonggil Jun's Personal Website.
 
 This is Byeonggil Jun's Personal Website based on [al-folio](https://github.com/alshedivat/al-folio)'s website template.
 
-## About 
+## About
+
 Byeonggil Jun is a Ph.D. student in Computer Engineering (CEN) in the School of Computing and Augmented Intelligence (SCAI) at Arizona State University. His research area includes real-time systems, distributed cyber-physical systems, and computer architecture.
 
 ## License
