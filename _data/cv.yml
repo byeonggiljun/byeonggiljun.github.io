@@ -47,7 +47,7 @@ cv:
       - title: Academic Acheivements
         date: 2024
         awarder: Hanyang University
-        summary: "Achieve high academic achievement.'"
+        summary: "Achieve high academic achievement."
 
     Publications:
       - title: "Embodied AI Launcher: A Tool for Modeling,Simulation, and Deployment Evaluation of Transformer-Based Embodied AI Tasks at the Edge"
