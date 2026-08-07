@@ -1,13 +1,13 @@
 metadata:
-  last_updated: '2026-07-27'
+  last_updated: '2026-08-07'
 papers:
   F2scqJgAAAAJ:2osOgNQ5qMEC:
     citations: 1
     title: Zero-Delay Cycles in Distributed Discrete-Event Systems using Lingua Franca
-    year: '2026'
+    year: '2025'
   F2scqJgAAAAJ:9yKSN-GCB0IC:
     citations: 1
-    title: Towards Efficient Privacy-Preserving Federated Learning on Edge with Reconfigurable FPGA
+    title: Towards efficient privacy-preserving federated learning on edge with reconfigurable FPGA
     year: '2025'
   F2scqJgAAAAJ:UeHWp8X0CEIC:
     citations: 0
@@ -19,7 +19,7 @@ papers:
     year: '2025'
   F2scqJgAAAAJ:qjMakFHDy7sC:
     citations: 2
-    title: Efficient Coordination for Distributed Discrete-Event Systems
+    title: Efficient coordination for distributed discrete-event systems
     year: '2024'
   F2scqJgAAAAJ:u-x6o8ySG0sC:
     citations: 1
