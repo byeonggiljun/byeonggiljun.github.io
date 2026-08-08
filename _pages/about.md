@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Byeonggil Jun is a Ph.D. student in Computer Engineering (CEN) in the School of Computing and Augmented Intelligence (SCAI) at Arizona State University.
+Byeonggil Jun is a Ph.D. student in Computer Engineering (CEN) in the School of Computing and Augmented Intelligence (SCAI) at Arizona State University, supervised by Prof. [Hokeun KIm](https://hokeun.github.io/) at the [ASU KIM LAB](https://labs.engineering.asu.edu/kim/).
 His research area includes real-time systems, distributed cyber-physical systems, and computer architecture.
 Recently, his work on addressing inefficiencies in distributed discrete system (DDS) simulation and implementation has been accepted and published in the conference [SIGSIM-PADS'25](https://sigsim.acm.org/conf/pads/2025/).
 
