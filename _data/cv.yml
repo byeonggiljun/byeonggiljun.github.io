@@ -4,7 +4,7 @@ cv:
   email: byeonggil@asu.edu
   location: Tempe, Arizona, USA
   image: "headshot.jpg"
-  summary: A 3rd year Ph.D. student at Arizona State University, who's research interests include cyber-physical systems, real-time systems, and computer architecture.
+  summary: "A 3rd year Ph.D. student at Arizona State University, advised by Prof. [Hokeun Kim](https://hokeun.github.io/) at the [ASU KIM LAB](https://labs.engineering.asu.edu/kim/), whose research interests include cyber-physical systems, real-time systems, and computer architecture."
 
   social_networks:
     - network: GitHub
