@@ -10,7 +10,6 @@ contact_note: >
 
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
 
-
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -18,6 +17,8 @@ footer_text: >
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+
+apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 
 url: https://byeonggiljun.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -30,10 +31,21 @@ back_to_top: true # set to false to disable the back to top button
 # -----------------------------------------------------------------------------
 
 # repo color theme
-repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_light: default # https://github.com/stats-organization/github-stats-extended/blob/master/packages/core/src/themes/README.md
+repo_theme_dark: dark # https://github.com/stats-organization/github-stats-extended/blob/master/packages/core/src/themes/README.md
+# Off by default: addresses are then split at build time so the HTML contains no
+# `user@host` and no `mailto:` for harvesters to scrape, and clicking one copies
+# it to the clipboard instead of opening a mail client.
+# See "Protecting email addresses from scrapers" in docs/CUSTOMIZE.md.
+protect_email: false
+
+# Off by default: the free public github-profile-trophy instance is disabled
+# (its Vercel deployment answers HTTP 402 / DEPLOYMENT_DISABLED), so every trophy
+# image 404s. The project itself is still open source and free — self-host it and
+# point external_services.github_profile_trophy_url at your instance, then set
+# enabled: true. See docs/CUSTOMIZE.md.
 repo_trophies:
-  enabled: true
+  enabled: false
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
   theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
 
@@ -41,7 +53,7 @@ repo_trophies:
 # To use a different instance or service for displaying GitHub stats and trophies,
 # update these URLs. These are used in the repository templates.
 external_services:
-  github_readme_stats_url: https://github-readme-stats.vercel.app
+  github_readme_stats_url: https://github-stats-extended.vercel.app
   github_profile_trophy_url: https://github-profile-trophy.vercel.app
 
 # -----------------------------------------------------------------------------
@@ -58,7 +70,7 @@ al_folio:
   distill:
     engine: distillpub-template
     source: al-org-dev/distill-template#al-folio
-    allow_remote_loader: true
+    allow_remote_loader: false
   features:
     cv:
       enabled: true
@@ -114,6 +126,8 @@ analytics:
   cronitor: # cronitor RUM analytics site ID (format: XXXXXXXXX)
   pirsch: # your Pirsch analytics site ID (length 32 characters)
   openpanel: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
+  cloudflare: # your Cloudflare Web Analytics beacon token (32 hex characters)
+enable_simple_analytics: false # Simple Analytics identifies a site by its domain, so it has no ID to set above
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
 google_site_verification: # your google-site-verification ID (Google Search Console)
@@ -160,17 +174,9 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 # Optional: Set default categories and tags for posts from each source.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+# No syndicated posts on this personal site. Template sample feeds would
+# fetch unrelated content even while the local _posts directory is excluded.
+external_sources: []
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -240,7 +246,8 @@ exclude:
   - gems/
   - migrations/
   - vendor
-  # Modifed
+  # Personal-site exclusions: keep template demos and private copies unpublished.
+  # Notebook conversion requires the optional Jupyter CLI; keep it out of normal builds.
   - assets/jupyter/blog.ipynb
   - _news/announcement_*.md
   - _pages/books.md
@@ -262,6 +269,8 @@ exclude:
   - _books/
   - backup/
   - upstream/
+  - AGENTS.md
+  - CLAUDE.md
 keep_files:
   - CNAME
   - .nojekyll
@@ -309,6 +318,9 @@ plugins:
   - al_math
   - al_comments
   - al_newsletter
+  - al_email_protect
+  - al_marimo
+  - al_rtl
 
 # Sitemap settings
 defaults:
@@ -645,10 +657,6 @@ third_party_libraries:
     url:
       js: "https://cdn.jsdelivr.net/npm/plotly.js@{{version}}/dist/plotly.min.js"
     version: "3.0.1"
-  polyfill:
-    url:
-      js: "https://cdnjs.cloudflare.com/polyfill/v{{version}}/polyfill.min.js?features=es6"
-    version: "3"
   pseudocode:
     integrity:
       css: "sha256-VwMV//xgBPDyRFVSOshhRhzJRDyBmIACniLPpeXNUdc="
