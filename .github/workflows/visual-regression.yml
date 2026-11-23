@@ -36,6 +36,9 @@ on:
 
 jobs:
   visual-regression:
+    # Compares upstream demo content against an upstream release tag; generated
+    # personal sites have different content and do not carry that tag history.
+    if: github.repository == 'alshedivat/al-folio'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
