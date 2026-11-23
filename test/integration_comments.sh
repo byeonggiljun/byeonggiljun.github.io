@@ -10,7 +10,9 @@ cleanup() {
 }
 trap cleanup EXIT
 
-cat >"${tmp_override}" <<'YAML'
+ruby test/support/fixture_config.rb _posts/2022-12-10-giscus-comments.md _posts/2015-10-20-disqus-comments.md >"${tmp_override}"
+
+cat >>"${tmp_override}" <<'YAML'
 giscus:
   repo: alshedivat/al-folio
   repo_id: R_kgDOExample

@@ -10,7 +10,9 @@ cleanup() {
 }
 trap cleanup EXIT
 
-cat >"${tmp_override}" <<'YAML'
+ruby test/support/fixture_config.rb _posts/2018-12-22-distill.md >"${tmp_override}"
+
+cat >>"${tmp_override}" <<'YAML'
 giscus:
   repo: alshedivat/al-folio
   repo_id: R_kgDOExample
@@ -45,7 +47,7 @@ elif [ ! -f "${transforms_runtime}" ]; then
   exit 1
 fi
 
-expected_transforms_hash="70e3f488e23ec379d33a10a60311ec60b570b3b2d5f1823e9159f661c315184e"
+expected_transforms_hash="5d85590f5652b910ab2411019749c83ef5a5a3fbb9b739adc92b4557b6bf3d39"
 actual_transforms_hash="$(ruby -rdigest -e 'print Digest::SHA256.file(ARGV[0]).hexdigest' "${transforms_runtime}")"
 if [ "${actual_transforms_hash}" != "${expected_transforms_hash}" ]; then
   echo "unexpected distill transforms runtime hash: ${actual_transforms_hash}" >&2
